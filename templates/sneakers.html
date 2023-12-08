@@ -1,50 +1,19 @@
 {% extends "base.html" %}
-{% block title %}Home {% endblock title %}
+
+{% block title %}Sneakers {% endblock title %}
+
 {% block body %}
-<div class = "container-fluid" my-1 px-1>
-	<div id="carouselExample" class="carousel slide">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" 
-      aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		  </div>
-		<div class="carousel-inner">
-	  <div class="carousel-item active">
-		<img src="/static/3.png" class="d-block w-100" width = "50" height = "600" alt="...">
-	  </div>
-	  <div class="carousel-item">
-		<img src="/static/1.png" class="d-block w-100" width = "50" height = "600" alt="...">
-	  </div>
-	  <div class="carousel-item">
-		<img src="/static/2.png" class="d-block w-100" width = "50" height = "600" alt="...">
-	  </div>
-	</div>
-	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	  <span class="visually-hidden">Previous</span>
-	</button>
-	<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="visually-hidden">Next</span>
-	</button>
-  </div>
-</div>
-
-
-
 <div class="album py-5 bg-body-tertiary">
     <div class="container">
-		<h1 class = "my-4 text-center">Select your favourite shoes from our best collections</h1>
+		<h1 class = "my-4 text-center">Select your favourite sneakers from our best collections</h1>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-			<a href = "https://www.nike.com/in/u/custom-nike-phantom-elite-dynamic-fit-by-you-10001413/6780736307">
-        <img src="/static/football.png" class="d-block w-100" width = "50" height = "200" alt="..."></a>
+			<a href = "https://www.nike.com/in/t/air-max-scorpion-flyknit-shoes-DP54Sv/DJ4702-601"><img src="/static/imgsneakers/1.png" class="d-block w-100" width = "50" height = "200" alt="..."></a>
             <div class="card-body">
-              <p class="card-text">Nike Gripknit Phantom GX Elite Dynamic Fit AG By You<br>
-Custom Football Boot<br>
-MRP : ₹ 27 995.00</p>
+              <p class="card-text">Nike Air Max Scorpion Flyknit<br>
+                Women's Shoes<br>
+                MRP : ₹ 22 995.00</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -57,13 +26,13 @@ MRP : ₹ 27 995.00</p>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-      <a href = "https://www.nike.com/in/t/air-jordan-1-next-chapter-shoes-4NGNgz">      
-			<img src="/static/miles.png" class="d-block w-100" width = "50" height = "200" alt="...">
+      <a href = "https://www.nike.com/in/t/alphafly-2-road-racing-shoes-DcWrKF/DN3559-001">      
+			<img src="/static/imgsneakers/2.png" class="d-block w-100" width = "50" height = "200" alt="...">
       </a>     
       <div class="card-body">	
-              <p class="card-text">Air Jordan 1 'Next Chapter'<br>
-				Men's Shoes<br>
-				MRP : ₹ 18 395.00</p>
+              <p class="card-text">Nike Alphafly 2<br>
+                Women's Road Racing Shoes<br>
+				MRP : ₹ 22 795.00</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -76,12 +45,11 @@ MRP : ₹ 27 995.00</p>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <a href = "https://www.nike.com/in/t/air-more-uptempo-low-sp-shoes-9KkmCX">
-			<img src="/static/air.png" class="d-block w-100" width = "50" height = "200" alt="...">            
-      <div class="card-body">
-      </a><p class="card-text">Nike Air More Uptempo Low SP<br>
-				Men's Shoes<br>
-				MRP : ₹ 19 495.00</p>
+            <a href = "https://www.nike.com/in/t/vaporfly-3-road-racing-shoes-wdmHPR/DV4130-600">
+			<img src="/static/imgsneakers/3.png" class="d-block w-100" width = "50" height = "200" alt="...">            <div class="card-body">
+      </a><p class="card-text">Nike Vaporfly 3<br>
+				Women's Road Racing Shoes<br>
+				MRP : ₹ 20 695.00</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -95,12 +63,11 @@ MRP : ₹ 27 995.00</p>
 
         <div class="col">
           <div class="card shadow-sm">
-            <a href = "https://www.nike.com/in/u/custom-nike-metcon-9-by-you-10001600">
-			<img src="/static/gym.png" class="d-block w-100" width = "50" height = "200" alt="...">            
-      <div class="card-body">
-      </a>      <p class="card-text">Nike Metcon 9 By You<br>
-				Custom Men's Workout Shoes<br>
-				MRP : ₹ 14 995.00</p>
+            <a href = "https://www.nike.com/in/t/air-vapormax-moc-roam-shoes-tLQxbN/DZ7273-100">
+			<img src="/static/imgsneakers/4.png" class="d-block w-100" width = "50" height = "200" alt="...">            <div class="card-body">
+      </a>      <p class="card-text">Nike Air VaporMax Moc Roam<br>
+				Men's Shoes<br>
+				MRP : ₹ 19 695.00</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -114,8 +81,7 @@ MRP : ₹ 27 995.00</p>
         <div class="col">
           <div class="card shadow-sm">
             <a href = "https://www.nike.com/in/t/alphafly-3-proto-road-racing-shoes-K7BClg">
-			<img src="/static/runwoman.png" class="d-block w-100" width = "50" height = "200" alt="...">            
-      <div class="card-body">
+			<img src="/static/runwoman.png" class="d-block w-100" width = "50" height = "200" alt="...">            <div class="card-body">
       </a><p class="card-text">Nike Alphafly 3 Proto<br>
 				Women's Road Racing Shoes<br>
 				MRP : ₹ 22 795.00</p>
@@ -132,8 +98,7 @@ MRP : ₹ 27 995.00</p>
         <div class="col">
           <div class="card shadow-sm">
             <a href = "https://www.nike.com/in/t/ispa-link-axis-shoes-p2gV6M">
-			<img src="/static/ispa.png" class="d-block w-100" width = "50" height = "200" alt="...">            
-      <div class="card-body">
+			<img src="/static/ispa.png" class="d-block w-100" width = "50" height = "200" alt="...">            <div class="card-body">
       </a>      <p class="card-text">Nike ISPA Link Axis<br>
 				Men's Shoes<br>
 				MRP : ₹ 26 795.00</p>
@@ -149,5 +114,4 @@ MRP : ₹ 27 995.00</p>
         </div>
       </div>
     </div>
-  </div>
 {% endblock body %}

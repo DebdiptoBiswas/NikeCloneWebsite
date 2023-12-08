@@ -11,35 +11,26 @@ def index(request):
     if request.user.is_anonymous:
         return redirect("/login") 
     return render(request, 'index.html')
-
 def loginUser(request):
     if request.method=="POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
         print(username, password)
-
         # check if user has entered correct credentials
         user = authenticate(username=username, password=password)
-
         if user is not None:
             # A backend authenticated the credentials
             login(request, user)
             messages.success(request, "Logged in successfully.")
             return redirect("/")
-
         else:
             # No backend authenticated the credentials
             messages.error(request, 'Invalid username or password.')
             return render(request, 'login.html')
-
     return render(request, 'login.html')
-
 def logoutUser(request):
     logout(request)
     return redirect("/login")
-
-
-
 # Create your views here.
 # def index(request):
 # 	context = {
@@ -51,8 +42,15 @@ def logoutUser(request):
 def about(request):
 	return render(request, 'about.html')
 	#return HttpResponse("this is about page")
-def services(request):
-	return render(request, 'services.html')
+
+def slippers(request):
+	return render(request, 'slippers.html')
+	#return HttpResponse("this is services page")
+def sneakers(request):
+	return render(request, 'sneakers.html')
+	#return HttpResponse("this is services page")
+def jordan(request):
+	return render(request, 'jordan.html')
 	#return HttpResponse("this is services page")
 def contact(request):
 	if request.method == 'POST':
